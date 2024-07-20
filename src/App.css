@@ -2,3 +2,37 @@
   margin: 0 auto;
   text-align: center;
 }
+
+.nav-link.active {
+  color: blue !important; 
+  font-weight: bold; 
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.home-page {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #f8f9fa; /* Opcional: fondo claro para la HomePage */
+}
+
+.country-details-page {
+  flex: 2; /* Ajusta el tamaño según tus necesidades */
+  overflow-y: auto;
+  background-color: #e9ecef; /* Opcional: fondo más oscuro para la página de detalles */
+}
+
+/* Opcional: para asegurar que el Navbar se quede en la parte superior */
+.navbar {
+  z-index: 1;
+}
