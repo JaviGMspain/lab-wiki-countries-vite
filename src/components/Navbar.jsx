@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-dark text-white">
-        <NavLink className={"navbar-brand"} to={"/"}>
+      <nav className="navbar navbar-expand-lg bg-dark text-white">
+        <NavLink className={"navbar-brand text-white"} to={"/"}>
           WikiCountries
         </NavLink>
         <div className="collapse navbar-collapse">
@@ -13,7 +13,7 @@ function Navbar() {
               <NavLink
                 to={"/"}
                 className={({ isActive }) =>
-                  `nav-link ${isActive ? "active" : ""}`
+                  `nav-link text-white ${isActive ? "active" : ""}`
                 }
               >
                 Home
